@@ -28,8 +28,8 @@
   <div class="footer-grid">
     <div class="footer-copyright" style="grid-column: 1 / -1;">
       &copy; {{ "now" | date: "%Y" }} {{ site.name | escape }}
+      <div style="font-size: 0.85em; opacity: 0.85;">Last updated: {{ site.time | date: "%Y-%m-%d" }}</div>
     </div>
-  </div>
 </footer>
 
 <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
