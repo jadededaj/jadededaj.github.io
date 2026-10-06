@@ -9,13 +9,7 @@ permalink: /talks/
 <input type="text" class="pub-search" id="pubSearch" placeholder="Filter by title, author, or year...">
   
 <div class="section-card" id="pubList">
-<h3>Invited Talks</h3>
-
-{% bibliography --query @incollection[keywords ^= invited] %}
-
-<h3>Regular Talks</h3>
-
-{% bibliography --query @incollection[keywords != invited] %}
+{% bibliography --query @incollection %}
 </div>
 
 <script>
@@ -41,19 +35,7 @@ document.getElementById('pubSearch').addEventListener('input', function(e) {
       }
     });
 
-    let heading = list.previousElementSibling;
-    while (heading && heading.tagName !== 'H3') {
-      heading = heading.previousElementSibling;
-    }
-
-    if (hasAnyMatch) {
-      list.style.display = "";
-      if (heading) heading.style.display = "";
-    } else {
-      list.style.display = "none";
-      if (heading) heading.style.display = "none";
-    }
-  });
+list.style.display = hasAnyMatch ? "" : "none";);
 
   let noResultsMessage = document.getElementById('noResults');
   if (!noResultsMessage) {
