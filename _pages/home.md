@@ -15,7 +15,7 @@ permalink: /
 <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Cognition</a>
 </div>
 
-My research passion lies at the intersection of neuroimaging, neurodiversity, child development, and language processing.
+Broadly speaking, I aspire to use cognitive neuroscience to understand human nature.
 
 I employ multiple techniques, including behavioural studies, EEG/ERPs, fMRI, TMS, and research with neurodiverse people and kids, to shed light on the complex nature of processing in the human mind and brain.
 
